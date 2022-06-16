@@ -18,6 +18,10 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+group = 'com.hsw.book'
+version = '1.0-SNAMPSHOT'
+sourceCompatibility = '11.0.9'
+
 repositories {
     mavenCentral()
     jcenter()
@@ -25,5 +29,6 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
